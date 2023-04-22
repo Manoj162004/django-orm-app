@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab Budget</title>
+    </head>
+    <body>
+        <h1>Lab budget</h1>
+         {% if perms.myapp.view_labs %}
+        <ol>
+            <li>Machine Learning Lab - 65L</li>
+            <li>VR Lab - 95L</li>
+            <li>Deep learning Lab - 1.25 L</li>
+            
+        </ol>
+        {% else %}
+        <h2>You do not have enough permission to view lab details</h2>
+        {% endif %}
+    </body>
+</html>

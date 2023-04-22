@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SEC Students</title>
+    </head>
+    <body>
+        <h1>Hi {{ user.username }}</h1>
+        <h1> Students List:</h1>
+        <ul>
+            {% for st in qres %}
+            <li><p>{{ st.refno }}: {{ st.name }} : {{ st.age }} : {{ st.email }}</p></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
